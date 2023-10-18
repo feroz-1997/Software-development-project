@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Assignment - Group 20</title>
+        <meta name="description" content="Our first page">
+        <meta name="keywords" content="html tutorial template">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Always shows a header, even in smaller screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Redonculous Recipe Robot</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="">Saved Recipes</a>
+                <a class="mdl-navigation__link" href="">Recommedations</a>
+                <a class="mdl-navigation__link" href="">Something else</a>
+                <a class="mdl-navigation__link" href="">Another thing</a>
+                </nav>
+            </div>
+            </header>
+            <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Title</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Saved Recipes</a>
+                <a class="mdl-navigation__link" href="">Recommedations</a>
+                <a class="mdl-navigation__link" href="">Something else</a>
+                <a class="mdl-navigation__link" href="">Another thing</a>
+            </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <!-- Textfield with Floating Label -->
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="sample3">
+                        <label class="mdl-textfield__label" for="sample3">Enter Ingredients...</label>
+                        </div>
+                    </form>
+                    <!-- Three Line List with secondary info and action -->
+                    <style>
+                        .demo-list-three {
+                        width: 650px;
+                        }
+                        </style>
+                        
+                        <ul class="demo-list-three mdl-list">
+                        <li class="mdl-list__item mdl-list__item--three-line">
+                            <span class="mdl-list__item-primary-content">
+                            <i class="material-icons mdl-list__item-avatar">person</i>
+                            <span>Tandoori Chicken</span>
+                            <span class="mdl-list__item-text-body">
+                                Tandoori chicken is a South Asian dish of chicken marinated in yogurt and spices and roasted in a tandoor, a cylindrical clay oven.
+                            </span>
+                            </span>
+                            <span class="mdl-list__item-secondary-content">
+                            <a class="mdl-list__item-secondary-action" href="#">
+                                <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="icon-toggle-1">
+                                <input type="checkbox" id="icon-toggle-1" class="mdl-icon-toggle__input">
+                                <i class="mdl-icon-toggle__label material-icons">star</i>
+                                </label>
+                            </a>
+                            </span>
+                        </li>
+                        <li class="mdl-list__item mdl-list__item--three-line">
+                            <span class="mdl-list__item-primary-content">
+                            <i class="material-icons  mdl-list__item-avatar">person</i>
+                            <span>Korean Beef Stir Fry</span>
+                            <span class="mdl-list__item-text-body">
+                                Delicious Korean Beef Stir Fry made with simple Asian inspired ingredients that cooks in just 5 minutes. 
+                                Perfect served over rice.
+                            </span>
+                            </span>
+                            <span class="mdl-list__item-secondary-content">
+                                <a class="mdl-list__item-secondary-action" href="#">
+                                    <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="icon-toggle-2">
+                                    <input type="checkbox" id="icon-toggle-2" class="mdl-icon-toggle__input">
+                                    <i class="mdl-icon-toggle__label material-icons">star</i>
+                                    </label>
+                                </a>
+                            </span>
+                        </li>
+                        <li class="mdl-list__item mdl-list__item--three-line">
+                            <span class="mdl-list__item-primary-content">
+                            <i class="material-icons  mdl-list__item-avatar">person</i>
+                            <span>Eggs</span>
+                            <span class="mdl-list__item-text-body">
+                                Eggs have a hard shell of calcium carbonate enclosing a liquid white, a single yolk (or an occasional double yolk)and an air cell.
+                            </span>
+                            </span>
+                            <span class="mdl-list__item-secondary-content">
+                                <a class="mdl-list__item-secondary-action" href="#">
+                                    <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="icon-toggle-3">
+                                    <input type="checkbox" id="icon-toggle-3" class="mdl-icon-toggle__input">
+                                    <i class="mdl-icon-toggle__label material-icons">star</i>
+                                    </label>
+                                </a>
+                            </span>
+                        </li>
+                        </ul>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
+
