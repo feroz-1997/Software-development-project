@@ -1,0 +1,58 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color for the entire page */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style the main container */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Style the heading */
+h1 {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #333;
+}
+
+/* Style labels, input fields, and select dropdown */
+label, input, select {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Style the "Search" button */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Adjust the margin for the result display */
+#result {
+    margin-top: 20px;
+}

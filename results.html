@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #d9f2a1, #84bc9c);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #333;
+        }
+        .recipe {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            text-align: left;
+        }
+        .recipe h2 {
+            color: #007bff;
+            text-decoration: underline;
+            display: inline;
+        }
+        .recipe p {
+            margin: 10px 0;
+        }
+        .recipe a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .recipe a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Results</h1>
+        <div>
+            {% for recipe in recipes %}
+            <div class="recipe">
+                <h2>"{{ recipe.label }}"</h2>
+                <p>Ingredients:</p>
+                {% for ingredient in recipe.ingredients %}
+                <p>{{ ingredient }}</p>
+                {% endfor %}
+                <p><a href="{{ recipe.url }}" target="_blank">View Recipe</a></p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
