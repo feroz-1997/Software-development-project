@@ -1,58 +1,90 @@
-/* Reset default margin and padding for all elements */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Set background color for the entire page */
+/* Base styling for the entire page */
 body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
 }
 
-/* Style the main container */
+/* Styling for the main content container */
 .container {
     background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
-/* Style the heading */
+/* Styling for main headings */
 h1 {
     font-family: 'Helvetica Neue', sans-serif;
     color: #333;
 }
 
-/* Style labels, input fields, and select dropdown */
-label, input, select {
-    display: block;
+/* Styling for input fields and button */
+.input-container {
+    display: flex;
+    flex-direction: column;
     margin: 10px 0;
 }
 
-/* Style the "Search" button */
-button {
+.input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button {
     background-color: #007bff;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-button:hover {
+.search-button:hover {
     background-color: #0056b3;
 }
 
-/* Adjust the margin for the result display */
-#result {
-    margin-top: 20px;
+/* Styling for recipe results */
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recipe {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: left;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-title {
+    color: #007bff;
+    text-decoration: underline;
+    font-style: italic;
+    display: inline;
+}
+
+.recipe-ingredients {
+    margin: 10px 0;
+}
+
+.recipe-link {
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
 }
