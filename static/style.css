@@ -1,0 +1,100 @@
+/* Base styling for the entire page */
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: linear-gradient(to bottom, #ffffff, #69065a);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Styling for the main content container */
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Styling for main headings */
+h1 {
+    font-family: 'Playfair Display', 'serif';
+    font-size: 36px;
+    color: #971f51;
+    margin-bottom: 20px;
+}
+
+/* Styling for input fields and button */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+.search-button {
+    background-color: #f76d57;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Cursive', 'serif';
+    font-size: 18px;
+}
+
+.search-button:hover {
+    background-color: #d23f2a;
+}
+
+/* Styling for recipe results */
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recipe {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #ffadfe;
+    box-shadow: 0 4px 4px rgba(13, 255, 243, 0.1);
+    font-family: 'Georgia', 'serif';
+    font-size: 18px;
+}
+
+.recipe-title {
+    color: #31cbe6;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 24px;
+    display: inline;
+}
+
+.recipe-ingredients {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.recipe-link {
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
