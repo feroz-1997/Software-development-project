@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Discover Delicious Recipes</h1>
+            <p>Find recipes that match your ingredients and preferences.</p>
+        </header>
+
+        <form id="search-form">
+            <div class="input-group">
+                <label for="ingredients">Ingredients:</label>
+                <input type="text" id="ingredients" placeholder="e.g., chicken, onion, garlic">
+            </div>
+
+            <div class="input-group">
+                <label for="num-recipes">Number of Recipes:</label>
+                <input type="number" id="num-recipes" min="1" max="10" value="5">
+            </div>
+
+            <div class="input-group">
+                <label for="meal-type">Meal Type:</label>
+                <select id="meal-type">
+                    <option value="">Any</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="snack">Snack</option>
+                </select>
+            </div>
+
+            <button type="submit" class="search-button">Search</button>
+        </form>
+
+        <section id="result" class="recipe-container">
+            <!-- Search results will be displayed here -->        
+        </section>
+    </div>
+
+    <script src="main.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
