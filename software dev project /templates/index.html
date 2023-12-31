@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="path/to/fonts/Roboto.css">
+    <link rel="stylesheet" href="path/to/fonts/PlayfairDisplay.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Finder</h1>
+        <div class="input-container">
+            <label for="ingredients">Enter ingredients (comma-separated):</label>
+            <input type="text" id="ingredients" class="input-field">
+        </div>
+        <div class="input-container">
+            <label for="num-recipes">Number of Recipes:</label>
+            <input type="number" id="num-recipes" value="10" class="input-field">
+        </div>
+        <div class="input-container">
+            <label for="meal-type">Meal Type:</label>
+            <select id="meal-type" class="input-field">
+                <option value="">Any</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+            </select>
+        </div>
+        <button id="search-button" class="search-button">Search</button>
+        <div id="result" class="result-container"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        // Event listener for the "Search" button
+        document.getElementById('search-button').addEventListener('click', function() {
+            searchRecipes();
+        });
+    </script>
+</body>
+</html>
