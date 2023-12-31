@@ -37,10 +37,9 @@ body {
     margin: 0 auto;
 }
 
-
 .recipe-card {
-    width: calc(33.33% - 20px); /* Set width for three cards per row with some margin */
-    height: 500px;
+    width: calc(30% - 20px); /* Adjusted width for better visibility */
+    height: 550px; /* Increased height for better visibility */
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -65,7 +64,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #fff; /* Set background color to white */
+    background-color: #fff;
 }
 
 .recipe h2 {
@@ -76,6 +75,11 @@ body {
 .recipe p {
     color: #555;
     margin: 0;
+}
+
+.recipe-ingredients {
+    color: #777;
+    margin-top: 10px;
 }
 
 .view-recipe-button {
@@ -92,7 +96,6 @@ body {
 .view-recipe-button:hover {
     background-color: #45a049;
 }
-
 
 .container {
     width: 90%;
